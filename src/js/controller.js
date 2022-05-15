@@ -114,6 +114,10 @@ const controlAddRecipe = async function (newRecipe) {
   //
 };
 
+const newFeature = function () {
+  console.log('Hello Đinh Thế Anh');
+};
+
 const init = function () {
   recipeView.addHandlerRendered(controlRecipes);
   recipeView.addhandlerUpdateServings(controlServings);
@@ -122,6 +126,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   bookmarkView.addHandleRender(controlBookmark);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Hello');
+  newFeature();
 };
 init();
